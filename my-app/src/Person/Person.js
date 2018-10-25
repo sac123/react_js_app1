@@ -20,6 +20,8 @@ const person = (props) => {
 		</div>   
 
 		)
+
+		
 }
 
 
