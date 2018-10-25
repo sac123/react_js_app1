@@ -136,6 +136,7 @@ class App extends Component {
   }
 }
 
+
        // Added button click handler  
        /* <button 
         style= {style}
