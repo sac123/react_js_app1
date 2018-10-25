@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Radium, {StyleRoot}from 'radium';
-
 import Person from './Person/Person';
 
 class App extends Component {
@@ -78,13 +76,7 @@ class App extends Component {
         border :'1px solid blue',
         padding :'8px',
         width : '50%',
-        
-        ':hover':{
-          backgroundColor: 'red',
-          color:'black'
-        } 
-
-    }
+      }
 
     let personslist = null;
 
@@ -126,7 +118,7 @@ class App extends Component {
     }
 
   return (
-    <StyleRoot>
+    
       <div className="App">
        
        <h1>First react App </h1>
@@ -139,7 +131,7 @@ class App extends Component {
         {personslist}
         
       </div>
-      </StyleRoot>
+      
     );
   }
 }
@@ -149,4 +141,4 @@ class App extends Component {
         style= {style}
         onClick ={ this.buttonClickHandler }> Click</button>*/
 
-export default Radium(App);
+export default App;
